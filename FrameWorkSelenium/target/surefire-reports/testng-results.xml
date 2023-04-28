@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-28T15:14:20 EEST" name="All Test Suite" finished-at="2023-04-28T15:14:45 EEST" duration-ms="24706">
+    <groups>
+    </groups>
+    <test started-at="2023-04-28T15:14:20 EEST" name="google" finished-at="2023-04-28T15:14:45 EEST" duration-ms="24706">
+      <class name="test.Katalon">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Katalon@78e4deb0]" started-at="2023-04-28T15:14:20 EEST" name="setUp" finished-at="2023-04-28T15:14:27 EEST" duration-ms="6791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testUntitledTestCase()[pri:0, instance:test.Katalon@78e4deb0]" started-at="2023-04-28T15:14:27 EEST" name="testUntitledTestCase" finished-at="2023-04-28T15:14:44 EEST" duration-ms="17720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitledTestCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.Katalon@78e4deb0]" started-at="2023-04-28T15:14:44 EEST" name="tearDown" finished-at="2023-04-28T15:14:45 EEST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.Katalon -->
+    </test> <!-- google -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

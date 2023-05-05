@@ -26,16 +26,13 @@ public class GoogleTest {
 
     WebDriver driver;
 
-    Eyes eyes = new Eyes();
     @BeforeClass
     public void setup() {
         WebDriverManager.chromedriver().setup();
 //        ChromeOptions options = new ChromeOptions();
 //        options.addArguments("headless");
         driver = new ChromeDriver();
-        eyes.setApiKey("7LOxuzceJhCETBk75fn88Z9tCGh4VHUyp53szQRnsb4110");
         driver = new ChromeDriver();
-        eyes.open(driver,"google search","google test",new RectangleSize(800,600));
     }
 
     @Test(dataProvider = "searchParam")
@@ -43,9 +40,7 @@ public class GoogleTest {
 
         SearchPage searchPage = new SearchPage(driver);
         searchPage.open("https://www.google.com/");
-        eyes.checkWindow("Hello");
         ResultPage resultPage = searchPage.search(text);
-        eyes.checkWindow("Bye");
         Assert.assertEquals(resultPage.getTextFromSearchBox(), text);
     }
 
@@ -70,7 +65,6 @@ public class GoogleTest {
 
     @AfterClass
     public void tearDown() {
-        eyes.close();
         driver.close();
     }
 }

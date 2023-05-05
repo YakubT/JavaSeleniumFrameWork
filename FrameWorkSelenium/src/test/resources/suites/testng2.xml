@@ -2,14 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Group Tests">
     <test name = "a">
-        <parameter name="Name" value="Anatolii"></parameter>
-        <groups>
-            <run>
-                <include name="a"></include>
-            </run>
-        </groups>
         <classes>
-            <class name="test.TestNgTest"></class>
+            <class name="test.GoogleTest">
+            </class>
         </classes>
     </test>
 </suite>

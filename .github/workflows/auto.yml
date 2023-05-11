@@ -1,1 +1,24 @@
+name: Test res CRON start
 
+on:
+  schedule:
+    - cron: '* 1,4,6,8,10,15,22,34,56,58 * ? * * *'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK 11
+        uses:  actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1.2.0
+      - run: chrome --version
+      - name: Build with Maven
+        run: |
+          cd FrameWorkSelenium
+          mvn clean -Dsuite=src/test/resources/suites/testng2 test

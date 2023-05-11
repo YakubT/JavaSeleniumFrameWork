@@ -16,6 +16,7 @@ jobs:
           distribution: 'temurin'
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@v1.2.0
+      - run: chrome --version
       - name: Build with Maven
         run: |
           cd FrameWorkSelenium

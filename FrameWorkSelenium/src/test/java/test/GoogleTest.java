@@ -29,7 +29,6 @@ public class GoogleTest {
 //        ChromeOptions options = new ChromeOptions();
 //        options.addArguments("headless");
         driver = new ChromeDriver();
-        driver = new ChromeDriver();
     }
 
     @Test(dataProvider = "searchParam")

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,6 +15,6 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
       - name: Build with Maven
-        run:
+        run: |
           cd FrameWorkSelenium
           mvn clean -Dsuite=src/test/resources/suites/testng2 test

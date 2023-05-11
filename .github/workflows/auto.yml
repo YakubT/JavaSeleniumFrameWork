@@ -5,7 +5,12 @@ on:
     - cron: '*/1 * * * *'
 
 jobs:
-  test:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - run: date
+      
+  cron-scedule:
     runs-on: ubuntu-latest
 
     steps:

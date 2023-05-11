@@ -1,4 +1,4 @@
-name: Java CI
+name: Manual Testing Java
 
 on:
   workflow_dispatch:

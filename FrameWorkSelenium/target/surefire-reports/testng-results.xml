@@ -1,25 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-28T15:14:20 EEST" name="All Test Suite" finished-at="2023-04-28T15:14:45 EEST" duration-ms="24706">
+  <suite started-at="2023-05-11T12:51:11 EEST" name="Group Tests" finished-at="2023-05-11T12:53:47 EEST" duration-ms="156496">
     <groups>
     </groups>
-    <test started-at="2023-04-28T15:14:20 EEST" name="google" finished-at="2023-04-28T15:14:45 EEST" duration-ms="24706">
-      <class name="test.Katalon">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Katalon@78e4deb0]" started-at="2023-04-28T15:14:20 EEST" name="setUp" finished-at="2023-04-28T15:14:27 EEST" duration-ms="6791" status="PASS">
+    <test started-at="2023-05-11T12:51:11 EEST" name="a" finished-at="2023-05-11T12:53:47 EEST" duration-ms="156496">
+      <class name="test.GoogleTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.GoogleTest@191ae03f]" started-at="2023-05-11T12:51:11 EEST" name="setup" finished-at="2023-05-11T12:51:42 EEST" duration-ms="31595" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testUntitledTestCase()[pri:0, instance:test.Katalon@78e4deb0]" started-at="2023-04-28T15:14:27 EEST" name="testUntitledTestCase" finished-at="2023-04-28T15:14:44 EEST" duration-ms="17720" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="testSearch(java.lang.String)[pri:0, instance:test.GoogleTest@191ae03f]" started-at="2023-05-11T12:51:43 EEST" name="testSearch" data-provider="searchParam" finished-at="2023-05-11T12:52:21 EEST" duration-ms="37616" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Solvd]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUntitledTestCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.Katalon@78e4deb0]" started-at="2023-04-28T15:14:44 EEST" name="tearDown" finished-at="2023-04-28T15:14:45 EEST" duration-ms="119" status="PASS">
+        </test-method> <!-- testSearch -->
+        <test-method signature="testSearch(java.lang.String)[pri:0, instance:test.GoogleTest@191ae03f]" started-at="2023-05-11T12:52:21 EEST" name="testSearch" data-provider="searchParam" finished-at="2023-05-11T12:52:49 EEST" duration-ms="27765" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GitHub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method signature="testSearch(java.lang.String)[pri:0, instance:test.GoogleTest@191ae03f]" started-at="2023-05-11T12:52:49 EEST" name="testSearch" data-provider="searchParam" finished-at="2023-05-11T12:53:27 EEST" duration-ms="38016" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KPI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method signature="testSearch(java.lang.String)[pri:0, instance:test.GoogleTest@191ae03f]" started-at="2023-05-11T12:53:27 EEST" name="testSearch" data-provider="searchParam" finished-at="2023-05-11T12:53:47 EEST" duration-ms="20368" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.GoogleTest@191ae03f]" started-at="2023-05-11T12:53:47 EEST" name="tearDown" finished-at="2023-05-11T12:53:47 EEST" duration-ms="376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.Katalon -->
-    </test> <!-- google -->
-  </suite> <!-- All Test Suite -->
+      </class> <!-- test.GoogleTest -->
+    </test> <!-- a -->
+  </suite> <!-- Group Tests -->
 </testng-results>

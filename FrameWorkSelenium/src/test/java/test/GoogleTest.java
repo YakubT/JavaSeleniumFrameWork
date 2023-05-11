@@ -25,7 +25,7 @@ public class GoogleTest {
 
     @BeforeClass
     public void setup() {
-        WebDriverManager.chromedriver().setup("115.0.5765.0");
+        WebDriverManager.chromedriver().setup();
 //        ChromeOptions options = new ChromeOptions();
 //        options.addArguments("headless");
         driver = new ChromeDriver();

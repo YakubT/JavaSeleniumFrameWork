@@ -2,7 +2,7 @@ name: Test res CRON start
 
 on:
   schedule:
-    - cron: '* 1,4,6,8,10,15,22,34,56,58 * ? * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   test:

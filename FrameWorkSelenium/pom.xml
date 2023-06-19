@@ -62,6 +62,19 @@
             <artifactId>eyes-selenium-java3</artifactId>
             <version>5.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.zaproxy</groupId>
+            <artifactId>zap-clientapi</artifactId>
+            <version>1.10.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.3.1</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>

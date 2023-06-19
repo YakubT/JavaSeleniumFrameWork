@@ -1,6 +1,8 @@
 package test;
 
 import io.restassured.RestAssured;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -9,17 +11,20 @@ import static org.hamcrest.core.IsIterableContaining.hasItems;
 
 public class ApiTest {
 
+    @BeforeClass
+    public void setUp() {
+        RestAssured.baseURI = "https://schedule.kpi.ua/api/";
+    }
+
     @Test
     public void testGetAllGroups() {
-        RestAssured.baseURI = "https://schedule.kpi.ua/api/schedule/groups";
-        given().body("").
-                when().get().then().body("data.name",hasItems("КП-12"));
+        given().basePath("schedule/groups").body("").
+                when().get().then().body("data.name",hasItems("КП-12", "КП-11","КП-13"));
     }
 
     @Test(dataProvider = "dpT")
     public void testGetTeachersContainsTeacher(String teacher) {
-        RestAssured.baseURI = "https://schedule.kpi.ua/api/schedule/lecturer/list";
-        given().body("").
+        given().basePath("schedule/lecturer/list").body("").
                 when().get().then().body("data.name",hasItems(teacher));
     }
 
